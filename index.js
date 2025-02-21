@@ -16,7 +16,7 @@ const db = async() => {
     console.log(e);
   }
 }
-
+db()
 app.get('/', (req, res) => {
   res.sendFile(resolve(__dirname, 'pages/index.html'));
 });
