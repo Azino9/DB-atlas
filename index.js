@@ -9,7 +9,7 @@ app.use(express.static('static'));
 const db = async() => {
   try{
     await mongoose.connect('mongodb+srv://mohitodomain:88347317@cluster0.i3hea.mongodb.net/Clusters?retryWrites=true&w=majority&appName=Cluster0')
-    .then (res => console.log("DB connected"))
+    .then (res => console.log("connected to DB"))
     .catch (e => console.log("Unexpected error occured"))
   }
   catch(e){
